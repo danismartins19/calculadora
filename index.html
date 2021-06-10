@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="visor" id="visor">
+                
+            </div>
+            <div class="row">  
+            <!-- primeira linha de operadores -->
+                <div class="botao ops" value="C" id="C" onclick="operador('C')">
+                    C
+                </div>
+                <div class="botao ops" value="%" id="%" onclick="equal('%')">
+                    %
+                </div>
+                <div class="botao ops" value="/" id="/" onclick="operador('/')">
+                    /
+                </div>
+                <div class="botao ops" value="X" id="X" onclick="operador('X')">
+                    X
+                </div>
+
+            <!-- primeira linha de operadores-->
+            </div>
+            
+
+
+            <div class="row">
+            <!-- segunda linha de operadores-->
+                
+                <div class="botao num" id="7" onclick="addNum(7)">
+                    7
+                </div>
+                <div class="botao num" id="8" onclick="addNum(8)">
+                    8
+                </div>
+                <div class="botao num" id="9" onclick="addNum(9)">
+                    9
+                </div>
+                <div class="botao ops" id="+" value="+"  onclick="operador('+')">
+                    +
+                </div>
+
+            <!-- segunda linha de operadores-->
+            </div>
+            
+            
+            <div class="row">
+            <!-- terceira linha de operadores-->
+
+                <div class="botao num" id="4" onclick="addNum(4)">
+                    4
+                </div>
+                <div class="botao num" id="5" onclick="addNum(5)">
+                    5
+                </div>
+                <div class="botao num" id="6" onclick="addNum(6)">
+                    6
+                </div>
+                <div class="botao ops" value="-"  id="-" onclick="operador('-')">
+                    -
+                </div>
+
+            
+            <!-- terceira linha de operadores-->
+            </div>
+
+            <div class="row2">
+            <!-- Quarta linha de numeros e operadores -->
+                <div class="column">
+                    <div class="botao2 num" id="1" onclick="addNum(1)">
+                        1
+                    </div>
+                    <div class="botao2 num" id="0" onclick="addNum(0)">
+                        0
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="botao2 num" id="2" onclick="addNum(2)">
+                        2
+                    </div>
+                    <div class="botao2 num" id="." onclick="addNum('.')">
+                        .
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="botao2 num" id="3" onclick="addNum(3)">
+                        3
+                    </div>
+                    <div class="botao2 num " onclick="deletar()">
+                        <img src="src/backspace.png" id="back" alt="backspace" class="back" >
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="botao3" id="equal" onclick="equal('=')">
+                        =
+                    </div>
+                </div>
+
+
+
+            <!-- Quarta linha de numeros e operadores -->
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
